@@ -1,0 +1,534 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+* {
+  user-select: none;
+  white-space: nowrap;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5tahoma, arial, \5b8b\4f53;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-style: normal;
+}
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: couriernew, courier, monospace;
+}
+small {
+  font-size: 12px;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+legend {
+  color: #000;
+}
+fieldset,
+img {
+  border: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background: url(../images/bg.jpg) no-repeat;
+  background-size: cover;
+  min-width: 1350px;
+}
+h4 {
+  color: #fff;
+  font-size: 0.3125rem;
+  font-weight: normal;
+}
+.viewport {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 1024px;
+  padding: 1.95rem 0.3rem 0;
+  min-height: 780px;
+  background: url(../images/logo.png) no-repeat 0 0 / contain;
+}
+.viewport .column {
+  flex: 3;
+}
+.viewport .column:nth-child(2) {
+  flex: 4;
+  margin: 0.5rem 0.3125rem 0;
+}
+.viewport .column:nth-child(2) .map {
+  height: 11.25rem;
+  margin-bottom: 0.3125rem;
+}
+.viewport .column:nth-child(2) .map .chart {
+  width: 100%;
+  height: 95.5%;
+}
+.viewport .column:nth-child(2) .map .chart .geo {
+  width: 100%;
+  height: 100%;
+}
+.viewport .column:nth-child(2) .chart .bar {
+  flex: 10;
+}
+.viewport .column:nth-child(3) .order {
+  height: 2.5rem;
+}
+.viewport .column:nth-child(3) .order .inner {
+  margin-top: 0.4rem;
+  display: flex;
+  flex-direction: column;
+}
+.viewport .column:nth-child(3) .order .inner .filter {
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+.viewport .column:nth-child(3) .order .inner .filter .active {
+  color: #fff;
+}
+.viewport .column:nth-child(3) .order .inner .filter a {
+  flex: 25%;
+  font-size: 0.3125rem;
+}
+.viewport .column:nth-child(3) .order .inner .filter a i {
+  margin: 0 0.3rem;
+  font-style: normal;
+  color: #49909e;
+}
+.viewport .column:nth-child(3) .order .inner .data {
+  padding-top: 0.5rem;
+  flex: 8;
+  display: none;
+}
+.viewport .column:nth-child(3) .order .inner .data .data_flex {
+  display: flex;
+}
+.viewport .column:nth-child(3) .order .inner .data:nth-child(2) {
+  display: flex;
+}
+.viewport .column:nth-child(3) .order .inner .data .item {
+  flex: 1;
+}
+.viewport .column:nth-child(3) .order .inner .data .item h4 {
+  font-size: 0.45rem;
+}
+.viewport .column:nth-child(3) .order a {
+  text-decoration: none;
+  color: #2d397e;
+}
+.viewport .column:nth-child(3) .sales {
+  height: 3.5rem;
+}
+.viewport .column:nth-child(3) .sales .caption h4 {
+  display: inline-block;
+}
+.viewport .column:nth-child(3) .sales .caption .a_active {
+  background-color: #6c84fa;
+  color: #fff;
+}
+.viewport .column:nth-child(3) .sales .caption a {
+  display: inline-block;
+  flex: 25%;
+  font-size: 0.3125rem;
+  text-decoration: none;
+  margin-right: 0.3rem;
+  color: #4c9bfd;
+  padding: 0 0.06rem;
+  border-radius: 2px;
+}
+.viewport .column:nth-child(3) .sales .caption i {
+  margin: 0 0.3rem;
+  font-style: normal;
+  color: #49909e;
+}
+.viewport .column:nth-child(3) .sales .chart {
+  position: relative;
+  margin-top: 0.2rem;
+  width: 100%;
+  height: 82%;
+}
+.viewport .column:nth-child(3) .sales .chart .label {
+  position: absolute;
+  left: 0.23rem;
+  color: #4c9bfd;
+}
+.viewport .column:nth-child(3) .sales .chart .line {
+  width: 100%;
+  height: 100%;
+}
+.viewport .column:nth-child(3) .wrap {
+  display: flex;
+  height: 4.2rem;
+}
+.viewport .column:nth-child(3) .wrap h4 {
+  font-style: normal;
+  color: #fff;
+}
+.viewport .column:nth-child(3) .wrap .channel {
+  flex: 5;
+  margin-right: 0.3rem;
+}
+.viewport .column:nth-child(3) .wrap .channel .data {
+  width: 100%;
+  height: 85%;
+}
+.viewport .column:nth-child(3) .wrap .channel .data .rader {
+  width: 100%;
+  height: 100%;
+}
+.viewport .column:nth-child(3) .wrap .quarter {
+  flex: 5;
+  flex-direction: column;
+}
+.viewport .column:nth-child(3) .wrap .quarter .inner {
+  display: flex;
+  flex-direction: column;
+}
+.viewport .column:nth-child(3) .wrap .quarter .inner .chart {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.viewport .column:nth-child(3) .wrap .quarter .inner .chart .box {
+  position: relative;
+  flex: 6;
+}
+.viewport .column:nth-child(3) .wrap .quarter .inner .chart .box .gauge {
+  width: 100%;
+  height: 100%;
+}
+.viewport .column:nth-child(3) .wrap .quarter .inner .chart .box .lable {
+  position: absolute;
+  top: 0.65rem;
+  left: 1.1rem;
+  color: #fff;
+  font-size: 0.5rem;
+}
+.viewport .column:nth-child(3) .wrap .quarter .inner .chart .flex {
+  display: flex;
+  flex-direction: column;
+}
+.viewport .column:nth-child(3) .wrap .quarter .inner .chart .data {
+  display: flex;
+  flex: 4;
+}
+.viewport .column:nth-child(3) .wrap .quarter .inner .chart .data .item {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+.viewport .column:nth-child(3) .wrap .quarter .inner .chart .data .item:nth-child(1) {
+  margin-right: 0.2rem;
+}
+.viewport .column:nth-child(3) .wrap .quarter .inner .chart .data .item h4 {
+  flex: 5;
+}
+.viewport .column:nth-child(3) .wrap .quarter .inner .chart .data .item span {
+  flex: 5;
+}
+.viewport .column:nth-child(3) .top {
+  height: 4.3rem;
+}
+.viewport .column:nth-child(3) .top .inner {
+  display: flex;
+  color: #7189d0;
+}
+.viewport .column:nth-child(3) .top .inner .all {
+  flex: 3;
+}
+.viewport .column:nth-child(3) .top .inner .all ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 88%;
+}
+.viewport .column:nth-child(3) .top .inner .all ul li i {
+  font-size: 0.56rem;
+  margin-right: 0.3rem;
+}
+.viewport .column:nth-child(3) .top .inner .province {
+  flex: 7;
+}
+.viewport .column:nth-child(3) .top .inner .province h4 {
+  position: relative;
+}
+.viewport .column:nth-child(3) .top .inner .province h4 span {
+  position: absolute;
+  right: 0;
+}
+.viewport .column:nth-child(3) .top .inner .province .data {
+  display: flex;
+  width: 100%;
+  height: 85%;
+}
+.viewport .column:nth-child(3) .top .inner .province .data .sup,
+.viewport .column:nth-child(3) .top .inner .province .data .sub {
+  flex: 5;
+  margin-right: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.viewport .column:nth-child(3) .top .inner .province .data .sup .li_active,
+.viewport .column:nth-child(3) .top .inner .province .data .sub .li_active {
+  background-color: rgba(84, 149, 240, 0.4);
+}
+.viewport .column:nth-child(3) .top .inner .province .data .sup li,
+.viewport .column:nth-child(3) .top .inner .province .data .sub li {
+  position: relative;
+  cursor: pointer;
+  padding: 10px 0;
+}
+.viewport .column:nth-child(3) .top .inner .province .data .sup li span,
+.viewport .column:nth-child(3) .top .inner .province .data .sub li span {
+  position: absolute;
+  right: 0;
+}
+.viewport .column:nth-child(3) .top .inner .province .data .sub {
+  flex: 5;
+  color: #8ce7f8;
+  margin-right: 0;
+  background: url(../images/rect.png) no-repeat 0 0 / cover;
+}
+.viewport .column:nth-child(3) .top .inner .province .data .sub li {
+  padding: 0.1rem;
+  cursor: default;
+}
+.viewport .column .border-image {
+  position: relative;
+  border: solid;
+  border-width: 0.7969rem 0.5938rem 0.3125rem 2.0625rem;
+  border-image-source: url(../images/border.png);
+  border-image-slice: 51 38 20 132;
+  margin-bottom: 0.3125rem;
+}
+.viewport .column .border-image span {
+  font-size: 0.25rem;
+  color: #4c9bfd;
+}
+.viewport .column .border-image h4 {
+  font-style: normal;
+  color: #fff;
+  margin: 0 0 0.125rem 0.075rem;
+}
+.viewport .column .panel {
+  position: relative;
+  border: solid;
+  border-width: 0.7969rem 0.5938rem 0.3125rem 2.0625rem;
+  border-image-source: url(../images/border.png);
+  border-image-slice: 51 38 20 132;
+  margin-bottom: 0.3125rem;
+}
+.viewport .column .panel span {
+  font-size: 0.25rem;
+  color: #4c9bfd;
+}
+.viewport .column .panel h4 {
+  font-style: normal;
+  color: #fff;
+  margin: 0 0 0.125rem 0.075rem;
+}
+.viewport .column .panel .inner {
+  position: absolute;
+  top: -0.7969rem;
+  right: -0.5938rem;
+  bottom: -0.3125rem;
+  left: -2.0625rem;
+  padding: 0.375rem 0.5625rem;
+}
+.viewport .column .overview {
+  height: 1.7188rem;
+}
+.viewport .column .overview ul {
+  margin-top: 0.3125rem;
+  display: flex;
+  justify-content: space-between;
+}
+.viewport .column .monitor {
+  height: 7.5rem;
+  font-size: 0.1875rem;
+}
+.viewport .column .monitor .tabs a {
+  font-size: 0.3125rem;
+  text-decoration: none;
+  color: #2d397e;
+}
+.viewport .column .monitor .tabs i {
+  font-style: normal;
+  margin: 0 0.435rem;
+  color: #3e979e;
+}
+.viewport .column .monitor .tabs .active {
+  color: #fff;
+}
+.viewport .column .monitor .content {
+  margin-top: 0.3125rem;
+}
+.viewport .column .monitor .content .head {
+  display: flex;
+  position: absolute;
+  padding: 0.15rem 0;
+  right: 0px;
+  left: 0px;
+  color: #9bd0fa;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.viewport .column .monitor .content .head span:nth-child(1) {
+  flex: 3;
+  padding-left: 0.56rem;
+}
+.viewport .column .monitor .content .head span:nth-child(2) {
+  flex: 4;
+}
+.viewport .column .monitor .content .head span:nth-child(3) {
+  flex: 3;
+}
+.viewport .column .monitor .content .marquee-view {
+  position: relative;
+}
+.viewport .column .monitor .content .marquee-view .marquee {
+  position: absolute;
+  left: -0.57rem;
+  right: -0.53rem;
+  top: 0.68rem;
+  height: 6.5rem;
+  color: #7386b8;
+  overflow: hidden;
+}
+.viewport .column .monitor .content .marquee-view .marquee .row {
+  display: flex;
+  padding: 0.25rem 0;
+  padding-left: 0.57rem;
+}
+.viewport .column .monitor .content .marquee-view .marquee .row:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.viewport .column .monitor .content .marquee-view .marquee .row span:nth-child(1) {
+  flex: 3;
+}
+.viewport .column .monitor .content .marquee-view .marquee .row span:nth-child(2) {
+  flex: 4;
+}
+.viewport .column .monitor .content .marquee-view .marquee .row span:nth-child(3) {
+  margin-left: 15px;
+  margin-right: -0.3rem;
+  flex: 3;
+}
+.viewport .column .monitor .content:nth-child(3) {
+  display: none;
+}
+.viewport .column .point,
+.viewport .column .user {
+  height: 5.3125rem;
+}
+.viewport .column .point .chart,
+.viewport .column .user .chart {
+  margin-top: 0.3125rem;
+  width: 100%;
+  height: 70%;
+  display: flex;
+}
+.viewport .column .point .chart .pie,
+.viewport .column .user .chart .pie {
+  flex: 6;
+}
+.viewport .column .point .chart .data,
+.viewport .column .user .chart .data {
+  flex: 4;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background: url(../images/rect.png) no-repeat 0 0 / cover;
+}
+.viewport .column .point .chart .data div,
+.viewport .column .user .chart .data div {
+  padding: 0.444rem 0.2344rem 0;
+  flex: 5;
+}
+.viewport .column .point .chart .data div h4,
+.viewport .column .user .chart .data div h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.viewport .column .point .chart .data div:nth-child(2),
+.viewport .column .user .chart .data div:nth-child(2) {
+  padding-top: 0;
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 45px !important;
+  }
+}
+@media (min-width: 1920px) {
+  html {
+    font-size: 64px !important;
+  }
+}

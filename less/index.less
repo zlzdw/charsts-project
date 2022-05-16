@@ -1,0 +1,553 @@
+@import './init.less';
+
+
+
+body {
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+    min-width: 1350px;
+}
+
+h4 {
+    color: #fff;
+    font-size: .3125rem;
+    font-weight: normal;
+}
+
+.viewport {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1920px;
+    min-width: 1024px;
+    padding: 1.95rem .3rem 0;
+    min-height: 780px;
+    background: url(../images/logo.png) no-repeat 0 0/contain;
+
+    .column {
+        flex: 3;
+        // background-color: pink;
+
+        &:nth-child(2) {
+            flex: 4;
+            margin: .5rem .3125rem 0;
+
+            .map {
+                height: 11.25rem;
+                // background-color: rgba(255, 255, 255, .3);
+                margin-bottom: .3125rem;
+
+                .chart {
+                    width: 100%;
+                    height: 95.5%;
+
+                    .geo {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .chart .bar {
+                flex: 10
+            }
+        }
+
+        &:nth-child(3) {
+            .order {
+                height: 2.5rem;
+
+                .inner {
+                    margin-top: .4rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    .filter {
+                        display: flex;
+                        align-items: center;
+                        flex: 2;
+
+                        .active {
+                            color: #fff
+                        }
+
+                        a {
+                            flex: 25%;
+                            font-size: 0.3125rem;
+
+                            i {
+                                margin: 0 .3rem;
+                                font-style: normal;
+                                color: #49909e
+                            }
+                        }
+                    }
+
+                    .data {
+                        padding-top: .5rem;
+                        flex: 8;
+                        display: none;
+
+                        .data_flex {
+                            display: flex;
+                        }
+
+                        &:nth-child(2) {
+                            .data_flex
+                        }
+
+                        .item {
+                            flex: 1;
+
+
+                            h4 {
+                                font-size: .45rem;
+                            }
+                        }
+                    }
+                }
+
+
+
+                a {
+                    text-decoration: none;
+                    color: #2d397e
+                }
+            }
+
+            .sales {
+                height: 3.5rem;
+
+                .caption {
+                    h4 {
+                        display: inline-block;
+                    }
+
+                    .a_active {
+                        background-color: #6c84fa;
+                        color: #fff
+                    }
+
+                    a {
+
+                        display: inline-block;
+                        flex: 25%;
+                        font-size: 0.3125rem;
+                        text-decoration: none;
+                        margin-right: .3rem;
+                        color: #4c9bfd;
+                        padding: 0 .06rem;
+                        border-radius: 2px;
+                    }
+
+                    i {
+                        margin: 0 .3rem;
+                        font-style: normal;
+                        color: #49909e
+                    }
+
+                }
+
+                .chart {
+                    position: relative;
+                    margin-top: .2rem;
+                    width: 100%;
+                    height: 82%;
+
+                    .label {
+                        position: absolute;
+                        left: .23rem;
+                        color: #4c9bfd;
+                    }
+
+                    .line {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+
+            }
+
+            .wrap {
+                display: flex;
+                height: 4.2rem;
+
+                h4 {
+                    font-style: normal;
+                    color: #fff
+                }
+
+                .channel {
+                    flex: 5;
+                    margin-right: .3rem;
+
+                    .data {
+                        width: 100%;
+                        height: 85%;
+
+                        .rader {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .quarter {
+                    flex: 5;
+                    flex-direction: column;
+
+                    .inner {
+                        display: flex;
+                        flex-direction: column;
+
+                        .chart {
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+
+                            .box {
+                                position: relative;
+                                flex: 6;
+
+                                .gauge {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+
+                                .lable {
+                                    position: absolute;
+                                    top: .65rem;
+                                    left: 1.1rem;
+                                    color: #fff;
+                                    font-size: .5rem;
+                                }
+                            }
+
+                            .flex {
+                                display: flex;
+                                flex-direction: column;
+                            }
+
+                            .data {
+                                display: flex;
+                                flex: 4;
+
+                                .item {
+                                    .flex;
+                                    flex: 5;
+
+                                    &:nth-child(1) {
+                                        margin-right: .2rem;
+                                    }
+
+                                    h4 {
+                                        flex: 5
+                                    }
+
+                                    span {
+                                        flex: 5
+                                    }
+                                }
+
+
+                            }
+                        }
+
+
+                    }
+
+                }
+            }
+
+            .top {
+                height: 4.3rem;
+
+                .inner {
+                    display: flex;
+                    color: #7189d0;
+
+                    .all {
+                        flex: 3;
+
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            width: 100%;
+                            height: 88%;
+
+                            li {
+
+                                i {
+                                    font-size: .56rem;
+                                    margin-right: .3rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .province {
+                        flex: 7;
+
+                        h4 {
+                            position: relative;
+
+                            span {
+                                position: absolute;
+                                right: 0;
+                            }
+                        }
+
+                        .data {
+                            display: flex;
+                            width: 100%;
+                            height: 85%;
+
+                            .sup,
+                            .sub {
+                                flex: 5;
+                                margin-right: .3rem;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+
+                                .li_active {
+                                    background-color: rgba(84, 149, 240, .4);
+                                }
+
+                                li {
+                                    position: relative;
+                                    cursor: pointer;
+                                    padding: 10px 0;
+
+                                    span {
+                                        position: absolute;
+                                        right: 0;
+                                    }
+                                }
+                            }
+
+                            .sub {
+                                flex: 5;
+                                color: #8ce7f8;
+                                margin-right: 0;
+                                background: url(../images/rect.png) no-repeat 0 0 /cover;
+
+                                li {
+                                    padding: .1rem;
+                                    cursor: default;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        // 公共面板样式
+        .border-image {
+            position: relative;
+            border: solid;
+            border-width: .7969rem .5938rem .3125rem 2.0625rem;
+            border-image-source: url(../images/border.png);
+            border-image-slice: 51 38 20 132;
+            margin-bottom: .3125rem;
+
+            .span(@color) {
+                font-size: .25rem;
+                color: @color;
+            }
+
+            span {
+                .span(#4c9bfd);
+            }
+
+            h4 {
+                font-style: normal;
+                color: #fff;
+                margin: 0 0 .125rem .075rem;
+            }
+        }
+
+        .panel {
+            .border-image;
+
+            .inner {
+                position: absolute;
+                top: -.7969rem;
+                right: -.5938rem;
+                bottom: -.3125rem;
+                left: -2.0625rem;
+                // background: blue;
+                padding: .375rem .5625rem;
+            }
+        }
+
+        .overview {
+            height: 1.7188rem;
+
+            ul {
+                margin-top: .3125rem;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .monitor {
+            height: 7.5rem;
+            font-size: .1875rem;
+
+            .tabs {
+                a {
+                    font-size: .3125rem;
+                    text-decoration: none;
+                    color: rgb(45, 57, 126);
+                }
+
+                i {
+                    font-style: normal;
+                    margin: 0 .435rem;
+                    color: #3e979e;
+                }
+
+                .active {
+                    color: #fff
+                }
+            }
+
+            .content {
+                margin-top: .3125rem;
+
+                .head {
+                    display: flex;
+                    position: absolute;
+                    padding: .15rem 0;
+                    right: 0px;
+                    left: 0px;
+                    color: #9bd0fa;
+                    background-color: rgba(255, 255, 255, .15);
+
+
+
+                    span {
+                        &:nth-child(1) {
+                            flex: 3;
+                            padding-left: .56rem;
+                        }
+
+                        &:nth-child(2) {
+                            flex: 4;
+                        }
+
+                        &:nth-child(3) {
+                            flex: 3;
+                        }
+                    }
+                }
+
+                .marquee-view {
+                    position: relative;
+
+                    .marquee {
+
+                        position: absolute;
+                        left: -0.57rem;
+                        right: -0.53rem;
+                        top: .68rem;
+                        height: 6.5rem;
+                        color: #7386b8;
+                        overflow: hidden;
+
+                        .row {
+                            display: flex;
+                            padding: .25rem 0;
+                            padding-left: 0.57rem;
+
+                            &:hover {
+                                background-color: rgba(255, 255, 255, .2);
+                            }
+
+                            span {
+
+                                &:nth-child(1) {
+                                    flex: 3;
+                                }
+
+                                &:nth-child(2) {
+                                    // margin-left: 0.3rem;
+                                    flex: 4;
+                                }
+
+                                &:nth-child(3) {
+                                    margin-left: 15px;
+                                    margin-right: -.3rem;
+                                    flex: 3;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    display: none;
+                }
+            }
+
+        }
+
+        .point,
+        .user {
+            height: 5.3125rem;
+
+            .chart {
+                margin-top: .3125rem;
+                width: 100%;
+                height: 70%;
+                display: flex;
+
+                .pie {
+                    flex: 6;
+                    // background-color: pink;
+                }
+
+                .data {
+                    flex: 4;
+                    display: flex;
+                    height: 100%;
+                    flex-direction: column;
+                    background: url(../images/rect.png) no-repeat 0 0/cover;
+
+                    div {
+                        h4 {
+                            color: #fff;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+
+                        padding: .444rem .2344rem 0;
+                        flex: 5;
+
+                        &:nth-child(2) {
+                            padding-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 实现 rem 适配
+@media (max-width:1024px) {
+    html {
+        font-size: 45px !important;
+    }
+}
+
+@media (min-width:1920px) {
+    html {
+        font-size: 64px !important;
+    }
+}
